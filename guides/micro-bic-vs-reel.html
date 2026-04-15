@@ -7,7 +7,7 @@
     <meta name="description" content="Quel régime fiscal choisir en LMNP ? Simulation chiffrée micro-BIC vs régime réel avec amortissement. Trouvez le régime optimal pour votre situation.">
     <link rel="canonical" href="https://guidesfr.github.io/guides-immo-france/guides/micro-bic-vs-reel.html">
     <style>
-        :root{--primary:#1a365d;--accent:#2b6cb0;--bg:#f7fafc;--text:#2d3748;--light:#e2e8f0}
+        :root{--primary:#1a365d;--accent:#2b6cb0;--bg:#f7fafc;--text:#2d3748;--light:#e2e8f0;--green:#276749;--red:#c53030}
         *{margin:0;padding:0;box-sizing:border-box}
         body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.8}
         .container{max-width:800px;margin:0 auto;padding:2rem 1.5rem}
@@ -31,6 +31,13 @@
         .related li{margin-bottom:.5rem}
         .related a{color:var(--accent);text-decoration:none}
         footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--light);color:#a0aec0;font-size:.85rem}
+        table{width:100%;border-collapse:collapse;margin:1.5rem 0}
+        th,td{padding:.7rem;border:1px solid var(--light);text-align:left;font-size:.95rem}
+        th{background:var(--primary);color:white}
+        .highlight{background:#ebf8ff;border-left:4px solid var(--accent);padding:1rem 1.2rem;margin:1.5rem 0;border-radius:0 6px 6px 0}
+        .warning{background:#fff5f5;border-left:4px solid var(--red);padding:1rem 1.2rem;margin:1.5rem 0;border-radius:0 6px 6px 0}
+        ul,ol{margin:0 0 1rem 1.5rem}
+        li{margin-bottom:.4rem}
     </style>
     <script type="application/ld+json">
     {
@@ -64,11 +71,92 @@
         <h1>Micro-BIC vs Réel en LMNP : Simulation Comparative 2026</h1>
         <p class="meta">Mis à jour en avril 2026</p>
 
-        <div class="content-placeholder">
-            ⚡ CONTENU À GÉNÉRER AVEC CLAUDE CODE ⚡<br>
-            Instruction : "Génère le contenu complet (800-1200 mots) pour micro-bic-vs-reel.html<br>
-            en suivant le style du guide LMNP. Cible SEO : Micro-BIC vs Réel en LMNP : Simulation Comparative 2026"
+        <p>Le choix entre micro-BIC et régime réel est <strong>la décision fiscale la plus importante</strong> pour un investisseur LMNP. Chaque année, des milliers de propriétaires perdent des centaines voire des milliers d'euros en restant au micro-BIC par défaut, sans même comparer. Voici une simulation détaillée pour choisir le bon régime en 2026.</p>
+
+        <h2>Micro-BIC et régime réel : rappel des principes</h2>
+        <table>
+            <tr><th>Critère</th><th>Micro-BIC</th><th>Régime réel simplifié</th></tr>
+            <tr><td>Plafond de recettes</td><td>77 700 €/an</td><td>Pas de plafond</td></tr>
+            <tr><td>Calcul du bénéfice</td><td>Abattement forfaitaire de 50 %</td><td>Charges réelles + amortissement</td></tr>
+            <tr><td>Comptabilité</td><td>Aucune obligation</td><td>Liasse fiscale obligatoire</td></tr>
+            <tr><td>Coût comptable</td><td>0 €</td><td>300 – 600 €/an</td></tr>
+            <tr><td>Amortissement</td><td>Non</td><td>Oui</td></tr>
+            <tr><td>Report de déficit</td><td>Non</td><td>Oui (sur BIC futurs, 10 ans)</td></tr>
+        </table>
+
+        <h2>Simulation n°1 : Studio étudiant (achat récent à crédit)</h2>
+        <p>Studio acheté 90 000 € (dont 15 % de terrain), financé à crédit, loué 450 €/mois meublé :</p>
+
+        <table>
+            <tr><th>Poste</th><th>Montant annuel</th></tr>
+            <tr><td>Loyers encaissés</td><td>5 400 €</td></tr>
+            <tr><td>Intérêts d'emprunt</td><td>1 800 €</td></tr>
+            <tr><td>Taxe foncière</td><td>650 €</td></tr>
+            <tr><td>Charges copropriété (non récupérables)</td><td>400 €</td></tr>
+            <tr><td>Assurance PNO</td><td>150 €</td></tr>
+            <tr><td>Comptable</td><td>400 €</td></tr>
+            <tr><td>Amortissement immeuble (76 500 € sur 30 ans)</td><td>2 550 €</td></tr>
+            <tr><td>Amortissement mobilier (5 000 € sur 7 ans)</td><td>714 €</td></tr>
+        </table>
+
+        <table>
+            <tr><th></th><th>Micro-BIC</th><th>Régime réel</th></tr>
+            <tr><td>Recettes</td><td>5 400 €</td><td>5 400 €</td></tr>
+            <tr><td>Abattement / Déductions</td><td>-2 700 € (50 %)</td><td>-6 664 €</td></tr>
+            <tr><td><strong>Base imposable</strong></td><td><strong>2 700 €</strong></td><td><strong>0 € (excédent reporté)</strong></td></tr>
+            <tr><td>IR + PS (TMI 30 %)</td><td>1 274 €</td><td>0 €</td></tr>
+        </table>
+
+        <div class="highlight">
+            <strong>Économie au réel : 1 274 €/an</strong> — soit plus de 12 700 € sur 10 ans. Même en déduisant les frais de comptable (400 €/an), le gain net est de 874 €/an. Le réel est largement gagnant.
         </div>
+
+        <h2>Simulation n°2 : T2 ancien sans crédit (payé cash)</h2>
+        <p>T2 acheté 120 000 € comptant, loué 600 €/mois meublé :</p>
+
+        <table>
+            <tr><th></th><th>Micro-BIC</th><th>Régime réel</th></tr>
+            <tr><td>Recettes</td><td>7 200 €</td><td>7 200 €</td></tr>
+            <tr><td>Abattement / Déductions</td><td>-3 600 €</td><td>-5 200 € (charges 1 800 € + amort. 3 400 €)</td></tr>
+            <tr><td><strong>Base imposable</strong></td><td><strong>3 600 €</strong></td><td><strong>2 000 €</strong></td></tr>
+            <tr><td>IR + PS (TMI 30 %)</td><td>1 699 €</td><td>944 €</td></tr>
+            <tr><td><strong>Économie au réel</strong></td><td colspan="2" style="text-align:center"><strong>755 €/an</strong></td></tr>
+        </table>
+
+        <p>Même sans crédit (donc sans intérêts déductibles), le régime réel reste gagnant grâce à l'amortissement. L'écart est simplement moins spectaculaire.</p>
+
+        <h2>Quand le micro-BIC peut-il être intéressant ?</h2>
+        <p>Le micro-BIC est rarement optimal, mais il peut l'être dans de rares cas :</p>
+        <ul>
+            <li><strong>Bien ancien entièrement amorti</strong> : si le bien est détenu depuis 30+ ans, l'amortissement est terminé et les charges sont faibles.</li>
+            <li><strong>Recettes très faibles</strong> : pour un bien générant moins de 3 000 €/an de loyers avec très peu de charges.</li>
+            <li><strong>Refus de toute contrainte comptable</strong> : si la simplicité prime sur l'optimisation (cas rare en pratique).</li>
+        </ul>
+
+        <div class="warning">
+            <strong>Le piège du micro-BIC :</strong> Beaucoup de propriétaires restent au micro-BIC "par défaut" sans avoir jamais comparé. Or, dans <strong>plus de 85 % des cas</strong>, le régime réel est plus avantageux. Ne prenez pas cette décision par inertie — faites le calcul avec vos vrais chiffres.
+        </div>
+
+        <h2>Comment passer au régime réel</h2>
+        <ol>
+            <li><strong>Première année d'activité :</strong> l'option pour le réel se fait directement dans la déclaration de début d'activité (formulaire P0i sur le guichet unique INPI).</li>
+            <li><strong>En cours d'activité :</strong> envoyez un courrier d'option au Service des Impôts des Entreprises (SIE) avant la date de déclaration de l'année pour laquelle vous souhaitez opter. <strong>En 2026, le délai a été assoupli : vous pouvez opter jusqu'à la date limite de dépôt de la déclaration de revenus.</strong></li>
+            <li><strong>Trouvez un comptable spécialisé LMNP :</strong> les plateformes en ligne (Decla.fr, Qlower, Jedeclaremonmeuble.com) proposent la gestion complète pour 300 à 600 €/an, frais eux-mêmes déductibles.</li>
+        </ol>
+
+        <div class="highlight">
+            <strong>Adhésion à un CGA :</strong> En adhérant à un Centre de Gestion Agréé (~150 €/an), vous bénéficiez d'une réduction d'impôt de 2/3 des frais de comptabilité (plafonnée à 915 €). Concrètement, un comptable à 500 € + CGA à 150 € = 650 € de frais, dont 433 € récupérés en réduction d'impôt. Coût réel : <strong>217 €/an</strong>.
+        </div>
+
+        <h2>L'impact de la loi Le Meur sur le micro-BIC</h2>
+        <p>Si vous louez en meublé de tourisme non classé (type Airbnb), attention : la loi Le Meur (2024) a modifié les règles du micro-BIC :</p>
+        <table>
+            <tr><th>Type de location meublée</th><th>Abattement micro-BIC</th><th>Plafond recettes</th></tr>
+            <tr><td>Longue durée (bail classique)</td><td>50 %</td><td>77 700 €</td></tr>
+            <tr><td>Tourisme classé</td><td>50 %</td><td>77 700 €</td></tr>
+            <tr><td>Tourisme non classé (Airbnb)</td><td><strong>30 %</strong></td><td><strong>15 000 €</strong></td></tr>
+        </table>
+        <p>Pour les propriétaires Airbnb au micro-BIC, le passage au régime réel est devenu encore plus pertinent depuis cette réforme.</p>
 
         <h2>Questions fréquentes</h2>
         

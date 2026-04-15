@@ -7,7 +7,7 @@
     <meta name="description" content="Formules de rentabilité brute, nette et nette-nette. Calculez précisément le rendement de votre investissement locatif avec notre guide et simulateur.">
     <link rel="canonical" href="https://guidesfr.github.io/guides-immo-france/guides/rentabilite-locative.html">
     <style>
-        :root{--primary:#1a365d;--accent:#2b6cb0;--bg:#f7fafc;--text:#2d3748;--light:#e2e8f0}
+        :root{--primary:#1a365d;--accent:#2b6cb0;--bg:#f7fafc;--text:#2d3748;--light:#e2e8f0;--green:#276749;--red:#c53030}
         *{margin:0;padding:0;box-sizing:border-box}
         body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.8}
         .container{max-width:800px;margin:0 auto;padding:2rem 1.5rem}
@@ -31,6 +31,13 @@
         .related li{margin-bottom:.5rem}
         .related a{color:var(--accent);text-decoration:none}
         footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--light);color:#a0aec0;font-size:.85rem}
+        table{width:100%;border-collapse:collapse;margin:1.5rem 0}
+        th,td{padding:.7rem;border:1px solid var(--light);text-align:left;font-size:.95rem}
+        th{background:var(--primary);color:white}
+        .highlight{background:#ebf8ff;border-left:4px solid var(--accent);padding:1rem 1.2rem;margin:1.5rem 0;border-radius:0 6px 6px 0}
+        .warning{background:#fff5f5;border-left:4px solid var(--red);padding:1rem 1.2rem;margin:1.5rem 0;border-radius:0 6px 6px 0}
+        ul,ol{margin:0 0 1rem 1.5rem}
+        li{margin-bottom:.4rem}
     </style>
     <script type="application/ld+json">
     {
@@ -72,10 +79,81 @@
         <h1>Comment Calculer la Rentabilité Locative d'un Bien Immobilier en 2026</h1>
         <p class="meta">Mis à jour en avril 2026</p>
 
-        <div class="content-placeholder">
-            ⚡ CONTENU À GÉNÉRER AVEC CLAUDE CODE ⚡<br>
-            Instruction : "Génère le contenu complet (800-1200 mots) pour rentabilite-locative.html<br>
-            en suivant le style du guide LMNP. Cible SEO : Comment Calculer la Rentabilité Locative d'un Bien Immobilier en 2026"
+        <p>La rentabilité locative est <strong>l'indicateur clé</strong> de tout investissement immobilier. Mais derrière ce terme se cachent trois calculs bien distincts : brute, nette et nette-nette. Confondre ces notions peut vous amener à surestimer votre rendement de 2 à 4 points. Voici comment calculer précisément la rentabilité de votre investissement en 2026.</p>
+
+        <h2>Les 3 niveaux de rentabilité</h2>
+        <table>
+            <tr><th>Type</th><th>Formule</th><th>Ce qu'elle mesure</th></tr>
+            <tr><td>Brute</td><td>(Loyer annuel / Prix d'achat) × 100</td><td>Premier filtre rapide</td></tr>
+            <tr><td>Nette de charges</td><td>((Loyers - Charges) / Prix total) × 100</td><td>Rendement réel avant impôts</td></tr>
+            <tr><td>Nette-nette</td><td>((Loyers - Charges - Impôts) / Prix total) × 100</td><td>Ce qui reste dans votre poche</td></tr>
+        </table>
+
+        <h2>Calcul de la rentabilité brute</h2>
+        <p>La rentabilité brute est le calcul le plus simple. C'est un premier filtre pour comparer rapidement des biens :</p>
+
+        <p><strong>Rentabilité brute = (Loyer mensuel × 12) / Prix d'achat × 100</strong></p>
+
+        <div class="highlight">
+            <strong>Exemple :</strong> Un appartement acheté 150 000 €, loué 650 €/mois. Rentabilité brute = (650 × 12) / 150 000 × 100 = <strong>5,2 %</strong>. C'est un indicateur rapide mais trompeur car il ignore les charges, les frais de notaire et la fiscalité.
+        </div>
+
+        <h2>Calcul de la rentabilité nette</h2>
+        <p>La rentabilité nette intègre toutes les charges et le coût réel d'acquisition :</p>
+
+        <p><strong>Rentabilité nette = (Loyers annuels - Charges annuelles) / (Prix d'achat + Frais de notaire + Travaux) × 100</strong></p>
+
+        <h3>Les charges à déduire</h3>
+        <table>
+            <tr><th>Poste de charges</th><th>Montant annuel typique</th></tr>
+            <tr><td>Taxe foncière</td><td>500 – 2 000 €</td></tr>
+            <tr><td>Charges de copropriété (non récupérables)</td><td>300 – 1 500 €</td></tr>
+            <tr><td>Assurance PNO</td><td>100 – 300 €</td></tr>
+            <tr><td>Assurance loyers impayés (GLI)</td><td>2,5 – 4 % des loyers</td></tr>
+            <tr><td>Frais de gestion (si agence)</td><td>6 – 8 % des loyers</td></tr>
+            <tr><td>Provision vacance locative</td><td>1/12e des loyers (1 mois/an)</td></tr>
+            <tr><td>Entretien courant</td><td>1 – 2 % du prix d'achat</td></tr>
+        </table>
+
+        <div class="highlight">
+            <strong>Exemple complet :</strong> Appartement à 150 000 € + 12 000 € de frais de notaire = 162 000 €. Loyer : 650 €/mois = 7 800 €/an. Charges totales : 3 200 €/an. Rentabilité nette = (7 800 - 3 200) / 162 000 × 100 = <strong>2,84 %</strong>. On passe de 5,2 % brut à 2,84 % net — presque la moitié.
+        </div>
+
+        <h2>Calcul de la rentabilité nette-nette (après fiscalité)</h2>
+        <p>C'est le seul indicateur qui compte vraiment : ce qui reste après impôts. Le calcul dépend du régime fiscal choisi :</p>
+
+        <table>
+            <tr><th></th><th>Location nue (micro-foncier)</th><th>Location nue (réel)</th><th>LMNP (micro-BIC)</th><th>LMNP (réel)</th></tr>
+            <tr><td>Loyers annuels</td><td>7 800 €</td><td>7 800 €</td><td>9 360 € (+20 % meublé)</td><td>9 360 €</td></tr>
+            <tr><td>Base imposable</td><td>5 460 € (abatt. 30 %)</td><td>4 600 € (charges réelles)</td><td>4 680 € (abatt. 50 %)</td><td>2 160 € (charges + amort.)</td></tr>
+            <tr><td>IR (TMI 30 %)</td><td>1 638 €</td><td>1 380 €</td><td>1 404 €</td><td>648 €</td></tr>
+            <tr><td>PS (17,2 %)</td><td>939 €</td><td>791 €</td><td>805 €</td><td>372 €</td></tr>
+            <tr><td><strong>Total impôts</strong></td><td><strong>2 577 €</strong></td><td><strong>2 171 €</strong></td><td><strong>2 209 €</strong></td><td><strong>1 020 €</strong></td></tr>
+            <tr><td><strong>Rentabilité nette-nette</strong></td><td><strong>1,25 %</strong></td><td><strong>1,50 %</strong></td><td><strong>2,54 %</strong></td><td><strong>3,17 %</strong></td></tr>
+        </table>
+
+        <div class="warning">
+            <strong>L'écart est massif :</strong> Entre le pire cas (location nue au micro-foncier : 1,25 %) et le meilleur (LMNP au réel : 3,17 %), la rentabilité nette-nette varie du simple au triple. Le choix du régime fiscal est aussi important que le choix du bien lui-même.
+        </div>
+
+        <h2>Le cashflow : le vrai indicateur de terrain</h2>
+        <p>La rentabilité mesure le rendement du capital investi. Mais au quotidien, c'est le <strong>cashflow mensuel</strong> qui compte : combien il reste (ou manque) chaque mois après avoir tout payé.</p>
+
+        <p><strong>Cashflow = Loyer - Mensualité crédit - Charges - Impôts</strong></p>
+
+        <table>
+            <tr><th>Paramètre</th><th>Valeur</th></tr>
+            <tr><td>Loyer meublé</td><td>780 €/mois</td></tr>
+            <tr><td>Mensualité crédit (150 000 €, 20 ans, 3,5 %)</td><td>-870 €/mois</td></tr>
+            <tr><td>Charges (taxe foncière, copro, assurance, provision)</td><td>-267 €/mois</td></tr>
+            <tr><td>Impôts (LMNP réel)</td><td>-85 €/mois</td></tr>
+            <tr><td><strong>Cashflow mensuel</strong></td><td><strong>-442 €/mois</strong></td></tr>
+        </table>
+
+        <p>Dans cet exemple, l'investissement génère un effort d'épargne de 442 €/mois. C'est normal pour un bien financé à 100 % avec les taux de 2026. L'objectif n'est pas toujours d'avoir un cashflow positif dès le départ, mais de <strong>se constituer un patrimoine avec l'effet de levier du crédit</strong> tout en bénéficiant d'une fiscalité optimisée.</p>
+
+        <div class="highlight">
+            <strong>Quand le cashflow est-il positif ?</strong> En général, un cashflow positif nécessite un apport de 20-30 % ou un rendement brut supérieur à 8-9 %. C'est possible dans des villes comme Saint-Étienne, Mulhouse ou Le Mans, mais avec un risque de vacance plus élevé. Arbitrez entre cashflow et sécurité patrimoniale selon votre stratégie.
         </div>
 
         <h2>Questions fréquentes</h2>

@@ -7,7 +7,7 @@
     <meta name="description" content="Comment accéder aux vrais prix de vente immobilier par rue grâce aux données DVF. Guide d'utilisation des Demandes de Valeurs Foncières.">
     <link rel="canonical" href="https://guidesfr.github.io/guides-immo-france/guides/prix-m2-dvf.html">
     <style>
-        :root{--primary:#1a365d;--accent:#2b6cb0;--bg:#f7fafc;--text:#2d3748;--light:#e2e8f0}
+        :root{--primary:#1a365d;--accent:#2b6cb0;--bg:#f7fafc;--text:#2d3748;--light:#e2e8f0;--green:#276749;--red:#c53030}
         *{margin:0;padding:0;box-sizing:border-box}
         body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.8}
         .container{max-width:800px;margin:0 auto;padding:2rem 1.5rem}
@@ -31,6 +31,13 @@
         .related li{margin-bottom:.5rem}
         .related a{color:var(--accent);text-decoration:none}
         footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--light);color:#a0aec0;font-size:.85rem}
+        table{width:100%;border-collapse:collapse;margin:1.5rem 0}
+        th,td{padding:.7rem;border:1px solid var(--light);text-align:left;font-size:.95rem}
+        th{background:var(--primary);color:white}
+        .highlight{background:#ebf8ff;border-left:4px solid var(--accent);padding:1rem 1.2rem;margin:1.5rem 0;border-radius:0 6px 6px 0}
+        .warning{background:#fff5f5;border-left:4px solid var(--red);padding:1rem 1.2rem;margin:1.5rem 0;border-radius:0 6px 6px 0}
+        ul,ol{margin:0 0 1rem 1.5rem}
+        li{margin-bottom:.4rem}
     </style>
     <script type="application/ld+json">
     {
@@ -64,10 +71,75 @@
         <h1>Prix au m² par Rue : Comprendre et Utiliser les Données DVF</h1>
         <p class="meta">Mis à jour en avril 2026</p>
 
-        <div class="content-placeholder">
-            ⚡ CONTENU À GÉNÉRER AVEC CLAUDE CODE ⚡<br>
-            Instruction : "Génère le contenu complet (800-1200 mots) pour prix-m2-dvf.html<br>
-            en suivant le style du guide LMNP. Cible SEO : Prix au m² par Rue : Comprendre et Utiliser les Données DVF"
+        <p>Connaître le <strong>vrai prix au m² d'une rue</strong> est la base de tout investissement immobilier réussi. Les estimations des sites d'annonces sont basées sur les prix demandés, souvent surévalués de 5 à 15 %. La base DVF (Demandes de Valeurs Foncières), elle, publie les <strong>prix de vente réels</strong> enregistrés chez les notaires. Voici comment l'utiliser efficacement.</p>
+
+        <h2>Qu'est-ce que la base DVF ?</h2>
+        <p>DVF est une base de données <strong>publique et gratuite</strong>, gérée par la Direction Générale des Finances Publiques (DGFiP). Elle recense toutes les mutations immobilières (ventes) réalisées en France métropolitaine depuis 2014.</p>
+
+        <table>
+            <tr><th>Information disponible</th><th>Détail</th></tr>
+            <tr><td>Prix de vente</td><td>Prix exact payé par l'acquéreur (acte notarié)</td></tr>
+            <tr><td>Adresse</td><td>Numéro, rue, code postal, commune</td></tr>
+            <tr><td>Surface</td><td>Surface du bien (Carrez pour les lots de copropriété)</td></tr>
+            <tr><td>Type de bien</td><td>Appartement, maison, terrain, local commercial</td></tr>
+            <tr><td>Date de vente</td><td>Date de la mutation (signature de l'acte)</td></tr>
+            <tr><td>Nombre de pièces</td><td>Nombre de pièces principales</td></tr>
+        </table>
+
+        <div class="highlight">
+            <strong>Pourquoi c'est plus fiable :</strong> Un T3 de 65 m² affiché à 250 000 € sur un site d'annonces peut se vendre au final à 225 000 € après négociation. C'est ce prix réel de 225 000 € (soit 3 462 €/m²) qui apparaît dans DVF, pas le prix d'affichage.
+        </div>
+
+        <h2>Comment accéder aux données DVF</h2>
+        <h3>Option 1 : la carte interactive officielle</h3>
+        <p>Le site <em>app.dvf.etalab.gouv.fr</em> propose une carte interactive. Zoomez sur une zone, cliquez sur une parcelle et visualisez toutes les transactions avec le prix, la surface et la date.</p>
+
+        <h3>Option 2 : la recherche par adresse</h3>
+        <p>Le site <em>explore.data.gouv.fr/immobilier</em> permet une recherche par commune et par section cadastrale, avec des filtres par type de bien et période.</p>
+
+        <h3>Option 3 : les données brutes</h3>
+        <p>Pour les utilisateurs avancés, les fichiers CSV complets sont téléchargeables sur <em>data.gouv.fr</em>. Ils contiennent des millions de transactions et peuvent être analysés avec Excel, Python ou tout outil de données.</p>
+
+        <h2>Comment interpréter les données DVF</h2>
+        <p>Les données brutes nécessitent quelques précautions d'interprétation :</p>
+
+        <h3>Ce qu'il faut vérifier</h3>
+        <ul>
+            <li><strong>La date de la transaction :</strong> un prix de 2019 n'est pas comparable à un prix de 2025. Les prix ont évolué de +15 à +25 % dans la plupart des villes entre 2019 et 2023, puis se sont stabilisés ou ont légèrement baissé en 2024-2025.</li>
+            <li><strong>Le type de bien :</strong> filtrez par "appartement" ou "maison". Les prix au m² sont très différents entre les deux.</li>
+            <li><strong>Les ventes atypiques :</strong> les ventes en viager, les cessions familiales ou les adjudications affichent des prix décalés par rapport au marché. Excluez-les de votre analyse.</li>
+        </ul>
+
+        <h3>Calculer le prix au m² fiable</h3>
+        <ol>
+            <li>Sélectionnez les transactions des <strong>2 dernières années</strong> dans un rayon de 200-500 m autour de l'adresse cible</li>
+            <li>Filtrez par type de bien similaire (même nombre de pièces, même étage approximatif)</li>
+            <li>Retirez les valeurs extrêmes (prix anormalement bas ou élevés)</li>
+            <li>Calculez la <strong>médiane</strong> (pas la moyenne) des prix au m² restants</li>
+        </ol>
+
+        <div class="warning">
+            <strong>Attention au prix au m² brut :</strong> Un rez-de-chaussée et un 5e étage avec vue dans le même immeuble peuvent avoir 20 à 30 % d'écart de prix au m². Les données DVF ne détaillent pas l'étage ni l'orientation. Utilisez le prix médian comme point de départ et ajustez selon les caractéristiques du bien.
+        </div>
+
+        <h2>DVF vs estimations en ligne : le comparatif</h2>
+        <table>
+            <tr><th>Source</th><th>Base de calcul</th><th>Fiabilité</th><th>Biais</th></tr>
+            <tr><td>DVF (données notariales)</td><td>Prix de vente réels</td><td>Excellente</td><td>Aucun (données brutes)</td></tr>
+            <tr><td>Sites d'annonces (SeLoger, etc.)</td><td>Prix demandés</td><td>Moyenne</td><td>Surévaluation de 5-15 %</td></tr>
+            <tr><td>Notaires de France</td><td>DVF + données complémentaires</td><td>Très bonne</td><td>Délai de publication (6-9 mois)</td></tr>
+            <tr><td>Estimateurs en ligne (Meilleurs Agents)</td><td>Algorithme + DVF + annonces</td><td>Bonne</td><td>Lissage (ne capte pas les micro-marchés)</td></tr>
+        </table>
+
+        <h2>Utiliser DVF pour négocier votre achat</h2>
+        <ol>
+            <li><strong>Avant la visite :</strong> consultez toutes les ventes de l'immeuble ou de la rue sur les 3 dernières années. Notez le prix médian au m².</li>
+            <li><strong>Pendant la visite :</strong> évaluez les plus et les moins du bien par rapport aux ventes comparables (étage, vue, travaux, DPE).</li>
+            <li><strong>Pour l'offre :</strong> basez votre offre sur le prix médian DVF ajusté, pas sur le prix demandé par le vendeur. En moyenne, la marge de négociation en 2026 se situe entre 5 et 10 % du prix affiché.</li>
+        </ol>
+
+        <div class="highlight">
+            <strong>Pour les investisseurs :</strong> Croisez les données DVF (prix d'achat) avec les loyers constatés (via les annonces locatives ou l'Observatoire des Loyers) pour calculer directement le rendement brut d'un quartier : (loyer annuel médian / prix m² médian DVF) × 100. C'est la méthode la plus fiable pour identifier les zones à fort rendement.
         </div>
 
         <h2>Questions fréquentes</h2>

@@ -7,7 +7,7 @@
     <meta name="description" content="Comment consulter le DPE d'un logement par adresse. Base ADEME, interprétation des résultats et impact sur la valeur du bien.">
     <link rel="canonical" href="https://guidesfr.github.io/guides-immo-france/guides/dpe-adresse-consultation.html">
     <style>
-        :root{--primary:#1a365d;--accent:#2b6cb0;--bg:#f7fafc;--text:#2d3748;--light:#e2e8f0}
+        :root{--primary:#1a365d;--accent:#2b6cb0;--bg:#f7fafc;--text:#2d3748;--light:#e2e8f0;--green:#276749;--red:#c53030}
         *{margin:0;padding:0;box-sizing:border-box}
         body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.8}
         .container{max-width:800px;margin:0 auto;padding:2rem 1.5rem}
@@ -31,6 +31,13 @@
         .related li{margin-bottom:.5rem}
         .related a{color:var(--accent);text-decoration:none}
         footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--light);color:#a0aec0;font-size:.85rem}
+        table{width:100%;border-collapse:collapse;margin:1.5rem 0}
+        th,td{padding:.7rem;border:1px solid var(--light);text-align:left;font-size:.95rem}
+        th{background:var(--primary);color:white}
+        .highlight{background:#ebf8ff;border-left:4px solid var(--accent);padding:1rem 1.2rem;margin:1.5rem 0;border-radius:0 6px 6px 0}
+        .warning{background:#fff5f5;border-left:4px solid var(--red);padding:1rem 1.2rem;margin:1.5rem 0;border-radius:0 6px 6px 0}
+        ul,ol{margin:0 0 1rem 1.5rem}
+        li{margin-bottom:.4rem}
     </style>
     <script type="application/ld+json">
     {
@@ -64,11 +71,79 @@
         <h1>DPE par Adresse : Consulter le Diagnostic Énergétique de Votre Logement</h1>
         <p class="meta">Mis à jour en avril 2026</p>
 
-        <div class="content-placeholder">
-            ⚡ CONTENU À GÉNÉRER AVEC CLAUDE CODE ⚡<br>
-            Instruction : "Génère le contenu complet (800-1200 mots) pour dpe-adresse-consultation.html<br>
-            en suivant le style du guide LMNP. Cible SEO : DPE par Adresse : Consulter le Diagnostic Énergétique de Votre Logement"
+        <p>Le Diagnostic de Performance Énergétique (DPE) est devenu <strong>le critère n°1 des acheteurs et des locataires</strong> en France. Depuis la réforme de 2021, le DPE est opposable juridiquement et conditionne le droit de louer un bien. Bonne nouvelle : vous pouvez consulter le DPE de n'importe quel logement <strong>gratuitement en ligne</strong> grâce à la base de l'ADEME.</p>
+
+        <h2>Comment consulter le DPE d'un logement par adresse</h2>
+        <h3>La base de l'ADEME</h3>
+        <p>L'observatoire DPE de l'ADEME (<em>observatoire-dpe.ademe.fr</em>) recense tous les DPE réalisés en France depuis 2013. La recherche peut se faire par :</p>
+        <ul>
+            <li><strong>Adresse :</strong> saisissez le numéro et la rue pour afficher tous les DPE du bâtiment</li>
+            <li><strong>Numéro de DPE :</strong> si vous avez le numéro à 13 chiffres (visible sur le diagnostic)</li>
+            <li><strong>Commune :</strong> pour une vue d'ensemble de la performance énergétique d'un quartier</li>
+        </ul>
+
+        <h3>Informations disponibles</h3>
+        <table>
+            <tr><th>Donnée</th><th>Détail</th></tr>
+            <tr><td>Classe énergétique</td><td>A (très performant) à G (passoire thermique)</td></tr>
+            <tr><td>Consommation d'énergie primaire</td><td>En kWh/m²/an (chauffage, eau chaude, climatisation, éclairage)</td></tr>
+            <tr><td>Émissions de GES</td><td>En kg CO₂/m²/an</td></tr>
+            <tr><td>Date du diagnostic</td><td>Le DPE est valable 10 ans</td></tr>
+            <tr><td>Recommandations de travaux</td><td>Suggestions d'amélioration par le diagnostiqueur</td></tr>
+        </table>
+
+        <div class="highlight">
+            <strong>Astuce :</strong> En consultant la base ADEME avant une visite, vous pouvez connaître le DPE du logement avant même que l'agent immobilier ne vous le communique. Vous pouvez aussi comparer avec les DPE des autres lots de l'immeuble pour évaluer la performance globale du bâtiment.
         </div>
+
+        <h2>Comprendre les classes DPE</h2>
+        <table>
+            <tr><th>Classe</th><th>Consommation (kWh/m²/an)</th><th>Qualification</th><th>Impact location</th></tr>
+            <tr><td>A</td><td>&lt; 70</td><td>Excellent</td><td>Prime de valeur (+5-10 %)</td></tr>
+            <tr><td>B</td><td>70 – 110</td><td>Très bon</td><td>Prime de valeur (+3-5 %)</td></tr>
+            <tr><td>C</td><td>110 – 180</td><td>Bon</td><td>Standard</td></tr>
+            <tr><td>D</td><td>180 – 250</td><td>Moyen</td><td>Standard</td></tr>
+            <tr><td>E</td><td>250 – 330</td><td>Médiocre</td><td>Interdit en 2034</td></tr>
+            <tr><td>F</td><td>330 – 420</td><td>Mauvais</td><td><strong>Interdit en 2028</strong></td></tr>
+            <tr><td>G</td><td>&gt; 420</td><td>Passoire thermique</td><td><strong>Interdit depuis 2025</strong></td></tr>
+        </table>
+
+        <div class="warning">
+            <strong>DPE opposable :</strong> Depuis la réforme de juillet 2021, le DPE est juridiquement opposable. Si le DPE indique une classe D et que le bien s'avère être classé F après vérification, l'acquéreur peut engager la responsabilité du vendeur et du diagnostiqueur pour obtenir des dommages et intérêts.
+        </div>
+
+        <h2>L'impact du DPE sur la valeur d'un bien</h2>
+        <p>Le DPE influence directement le prix d'achat et le loyer :</p>
+
+        <h3>La "valeur verte" : prime et décote</h3>
+        <table>
+            <tr><th>Classe DPE</th><th>Impact sur le prix de vente</th><th>Impact sur le loyer</th></tr>
+            <tr><td>A-B</td><td>+5 à +10 % vs classe D</td><td>+3 à +8 %</td></tr>
+            <tr><td>C</td><td>+2 à +5 %</td><td>+1 à +3 %</td></tr>
+            <tr><td>D</td><td>Référence</td><td>Référence</td></tr>
+            <tr><td>E</td><td>-3 à -8 %</td><td>-2 à -5 %</td></tr>
+            <tr><td>F</td><td>-10 à -15 %</td><td>Interdit en 2028</td></tr>
+            <tr><td>G</td><td>-15 à -25 %</td><td>Interdit depuis 2025</td></tr>
+        </table>
+
+        <div class="highlight">
+            <strong>Opportunité d'investissement :</strong> Les biens classés F ou G se vendent avec une décote importante. Si vous achetez un bien G avec 20 % de décote et investissez 15 000 à 25 000 € en rénovation énergétique (partiellement financée par les aides) pour atteindre la classe D, vous récupérez la décote + la prime de valeur verte. C'est la stratégie "achat-rénovation DPE".
+        </div>
+
+        <h2>Validité et fiabilité du DPE</h2>
+        <ul>
+            <li><strong>Durée de validité :</strong> 10 ans pour les DPE réalisés depuis le 1er juillet 2021. Les anciens DPE (réalisés entre 2013 et 2017) sont arrivés à expiration au 31 décembre 2022. Ceux réalisés entre 2018 et juin 2021 expirent au 31 décembre 2024.</li>
+            <li><strong>Méthode de calcul :</strong> depuis 2021, la méthode 3CL (Calcul de la Consommation Conventionnelle des Logements) est la seule autorisée. Elle se base sur les caractéristiques du bâti, pas sur les factures. C'est plus fiable mais peut surévaluer la consommation des logements bien chauffés.</li>
+            <li><strong>Coût d'un nouveau DPE :</strong> 150 à 300 € selon la surface du bien et la région.</li>
+        </ul>
+
+        <h2>Que faire si le DPE est mauvais ?</h2>
+        <ol>
+            <li><strong>Identifiez les travaux prioritaires :</strong> le DPE inclut des recommandations de travaux avec l'impact estimé sur la classe.</li>
+            <li><strong>Faites réaliser un audit énergétique :</strong> plus détaillé que le DPE, il propose des scénarios chiffrés de rénovation (300 à 800 €).</li>
+            <li><strong>Estimez les aides :</strong> MaPrimeRénov' + CEE peuvent couvrir 40 à 80 % du coût des travaux selon vos revenus.</li>
+            <li><strong>Intégrez le coût dans votre offre d'achat :</strong> un DPE F ou G est un argument de négociation légitime. Déduisez le coût net de rénovation (après aides) du prix d'achat.</li>
+        </ol>
 
         <h2>Questions fréquentes</h2>
         

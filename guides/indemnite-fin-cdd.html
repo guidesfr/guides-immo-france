@@ -7,7 +7,7 @@
     <meta name="description" content="Comment calculer la prime de précarité en fin de CDD. Taux de 10 %, exceptions, cas d'exclusion et simulation.">
     <link rel="canonical" href="https://guidesfr.github.io/guides-immo-france/guides/indemnite-fin-cdd.html">
     <style>
-        :root{--primary:#1a365d;--accent:#2b6cb0;--bg:#f7fafc;--text:#2d3748;--light:#e2e8f0}
+        :root{--primary:#1a365d;--accent:#2b6cb0;--bg:#f7fafc;--text:#2d3748;--light:#e2e8f0;--green:#276749;--red:#c53030}
         *{margin:0;padding:0;box-sizing:border-box}
         body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.8}
         .container{max-width:800px;margin:0 auto;padding:2rem 1.5rem}
@@ -31,6 +31,13 @@
         .related li{margin-bottom:.5rem}
         .related a{color:var(--accent);text-decoration:none}
         footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--light);color:#a0aec0;font-size:.85rem}
+        table{width:100%;border-collapse:collapse;margin:1.5rem 0}
+        th,td{padding:.7rem;border:1px solid var(--light);text-align:left;font-size:.95rem}
+        th{background:var(--primary);color:white}
+        .highlight{background:#ebf8ff;border-left:4px solid var(--accent);padding:1rem 1.2rem;margin:1.5rem 0;border-radius:0 6px 6px 0}
+        .warning{background:#fff5f5;border-left:4px solid var(--red);padding:1rem 1.2rem;margin:1.5rem 0;border-radius:0 6px 6px 0}
+        ul,ol{margin:0 0 1rem 1.5rem}
+        li{margin-bottom:.4rem}
     </style>
     <script type="application/ld+json">
     {
@@ -64,11 +71,85 @@
         <h1>Indemnité de Fin de CDD : Calcul, Taux et Exceptions en 2026</h1>
         <p class="meta">Mis à jour en avril 2026</p>
 
-        <div class="content-placeholder">
-            ⚡ CONTENU À GÉNÉRER AVEC CLAUDE CODE ⚡<br>
-            Instruction : "Génère le contenu complet (800-1200 mots) pour indemnite-fin-cdd.html<br>
-            en suivant le style du guide LMNP. Cible SEO : Indemnité de Fin de CDD : Calcul, Taux et Exceptions en 2026"
+        <p>L'indemnité de fin de CDD, aussi appelée <strong>prime de précarité</strong>, est un droit pour la quasi-totalité des salariés en contrat à durée déterminée. Elle compense l'instabilité liée au caractère temporaire du contrat. En 2026, son taux reste fixé à <strong>10 % de la rémunération brute totale</strong>, mais de nombreuses exceptions existent. Voici le guide complet pour calculer et vérifier votre indemnité.</p>
+
+        <h2>Le principe : 10 % de la rémunération brute totale</h2>
+        <p>L'indemnité de fin de CDD est versée <strong>à l'issue du contrat</strong>, en même temps que le dernier salaire. Son calcul est simple :</p>
+
+        <p><strong>Indemnité = Rémunération brute totale perçue pendant le CDD × 10 %</strong></p>
+
+        <div class="highlight">
+            <strong>La rémunération brute totale</strong> inclut : le salaire de base, les heures supplémentaires, les primes (ancienneté, 13e mois proratisé, primes de rendement), les avantages en nature. Elle <strong>exclut</strong> : l'indemnité compensatrice de congés payés et les remboursements de frais professionnels.
         </div>
+
+        <h2>Exemples de calcul</h2>
+        <table>
+            <tr><th>Durée du CDD</th><th>Salaire brut mensuel</th><th>Rémunération brute totale</th><th>Indemnité (10 %)</th></tr>
+            <tr><td>3 mois</td><td>2 000 €</td><td>6 000 €</td><td>600 €</td></tr>
+            <tr><td>6 mois</td><td>2 500 €</td><td>15 000 €</td><td>1 500 €</td></tr>
+            <tr><td>12 mois</td><td>3 000 €</td><td>36 000 €</td><td>3 600 €</td></tr>
+            <tr><td>18 mois</td><td>3 500 €</td><td>63 000 €</td><td>6 300 €</td></tr>
+        </table>
+
+        <h3>Le taux réduit à 6 %</h3>
+        <p>Certaines conventions collectives prévoient un taux réduit à <strong>6 %</strong> (au lieu de 10 %), à condition d'offrir en contrepartie un accès à la formation professionnelle. Les secteurs concernés incluent notamment :</p>
+        <ul>
+            <li>Hôtellerie-restauration</li>
+            <li>Spectacle et audiovisuel</li>
+            <li>Enseignement privé</li>
+            <li>Certaines branches du sport professionnel</li>
+        </ul>
+
+        <div class="warning">
+            <strong>Vérifiez votre convention :</strong> Si votre employeur applique le taux de 6 %, demandez la preuve de la contrepartie formation prévue par l'accord de branche. Sans cette contrepartie, le taux de 10 % s'applique de plein droit.
+        </div>
+
+        <h2>Les cas où la prime de précarité n'est PAS due</h2>
+        <p>La loi prévoit plusieurs exceptions importantes :</p>
+
+        <table>
+            <tr><th>Situation</th><th>Prime due ?</th><th>Explication</th></tr>
+            <tr><td>L'employeur propose un CDI</td><td><strong>Non</strong></td><td>Si le CDI est proposé aux mêmes conditions ou plus favorables, même si le salarié refuse</td></tr>
+            <tr><td>Le salarié refuse un CDI</td><td><strong>Non</strong></td><td>Le refus du CDI fait perdre le droit à la prime</td></tr>
+            <tr><td>Rupture anticipée pour faute grave</td><td><strong>Non</strong></td><td>Faute du salarié rendant impossible le maintien</td></tr>
+            <tr><td>CDD saisonnier</td><td><strong>Non</strong></td><td>Contrats liés à une saison (agriculture, tourisme, etc.)</td></tr>
+            <tr><td>CDD d'usage</td><td><strong>Non</strong></td><td>Secteurs où le recours au CDD est d'usage constant (spectacle, restauration, sport...)</td></tr>
+            <tr><td>CDD étudiant (job pendant les vacances)</td><td><strong>Non</strong></td><td>CDD conclu pendant les vacances scolaires/universitaires</td></tr>
+            <tr><td>CDD qui se poursuit en CDI</td><td><strong>Non</strong></td><td>Le CDD débouche directement sur un CDI sans interruption</td></tr>
+            <tr><td>Rupture anticipée à l'initiative du salarié</td><td><strong>Non</strong></td><td>Démission du salarié avant le terme</td></tr>
+            <tr><td>Force majeure</td><td><strong>Non</strong></td><td>Événement imprévisible et irrésistible</td></tr>
+        </table>
+
+        <div class="highlight">
+            <strong>CDD de remplacement :</strong> La prime de précarité <strong>est due</strong> pour les CDD de remplacement (remplacement d'un salarié absent). C'est une idée reçue fréquente de penser le contraire. Seules les exceptions listées ci-dessus s'appliquent.
+        </div>
+
+        <h2>Fiscalité de l'indemnité de fin de CDD</h2>
+        <p>L'indemnité de fin de CDD est considérée comme un <strong>complément de salaire</strong>, pas comme une indemnité de rupture. Elle est donc :</p>
+        <ul>
+            <li><strong>Imposable à l'IR :</strong> intégralement soumise à l'impôt sur le revenu dans la catégorie des traitements et salaires</li>
+            <li><strong>Soumise aux cotisations sociales :</strong> charges salariales et patronales comme un salaire classique</li>
+            <li><strong>Soumise à la CSG/CRDS :</strong> aux taux habituels (9,2 % CSG + 0,5 % CRDS)</li>
+        </ul>
+
+        <div class="warning">
+            <strong>Différence avec l'indemnité de licenciement :</strong> Contrairement à l'indemnité de licenciement (partiellement exonérée), la prime de précarité est <strong>intégralement taxée</strong> comme un salaire. Sur un montant brut de 3 000 €, vous percevrez environ 2 340 € net (après ~22 % de charges salariales), puis il faudra déclarer ce montant aux impôts.
+        </div>
+
+        <h2>Indemnité compensatrice de congés payés</h2>
+        <p>En plus de la prime de précarité, vous avez droit à une <strong>indemnité compensatrice de congés payés</strong> si vous n'avez pas pris tous vos congés acquis :</p>
+        <ul>
+            <li><strong>Calcul :</strong> 10 % de la rémunération brute totale (incluant la prime de précarité)</li>
+            <li><strong>Exemple :</strong> Pour un CDD de 6 mois à 2 500 €/mois : rémunération brute = 15 000 € + prime de précarité 1 500 € = 16 500 €. Indemnité de congés payés = 1 650 €.</li>
+        </ul>
+
+        <h2>Que faire en cas de non-paiement</h2>
+        <ol>
+            <li><strong>Vérifiez votre dernier bulletin de paie :</strong> la prime de précarité doit y figurer sur une ligne distincte.</li>
+            <li><strong>Contactez votre employeur par écrit :</strong> un courrier recommandé rappelant l'article L.1243-8 du Code du travail suffit souvent à débloquer la situation.</li>
+            <li><strong>Saisissez le Conseil de prud'hommes :</strong> vous avez <strong>3 ans</strong> pour réclamer une prime de précarité non versée (délai de prescription des salaires). La procédure est gratuite.</li>
+            <li><strong>Contactez l'inspection du travail :</strong> le non-paiement de la prime de précarité est une infraction passible d'amende pour l'employeur.</li>
+        </ol>
 
         <h2>Questions fréquentes</h2>
         
